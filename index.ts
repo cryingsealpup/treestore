@@ -1,6 +1,8 @@
-import TreeStore from "./src/TreeStore.js";
+import TreeStore from "./src/TreeStore";
+import { Item } from "./src/TreeStore";
 
-const items = [
+
+const items: Item[] = [
     {
         id: 2,
         parent: 1,
@@ -44,13 +46,14 @@ const items = [
         type: null
     },
 ];
+
 const ts = new TreeStore(items);
 
 
-console.log('GET ALL\n', ts.getAll(), '\n')
-console.log('GET ITEM 7\n', ts.getItem(7), '\n')
-console.log('GET CHILDREN 4\n', ts.getChildren(4), '\n')
-console.log('GET CHILDREN 5\n',ts.getChildren(5), '\n')
-console.log('GET CHILDREN 2\n',ts.getChildren(2), '\n')
-console.log('GET ALL CHILDREN 2\n',ts.getAllChildren(2), '\n')
-console.log('GET ALL PARENTS 7\n',ts.getAllParents(7), '\n')
+console.log('GET ALL', ts.getAll(), '\n')
+console.log('GET ITEM 7', ts.getItem(7), '\n')
+console.log('GET CHILDREN 4', ts.getChildren(4), '\n')
+console.log('GET CHILDREN 5',ts.getChildren(5), '\n')
+console.log('GET CHILDREN 2',ts.getChildren(2), '\n')
+console.log('GET ALL CHILDREN 2',ts.getAllChildren(2), '\n')
+console.log('GET ALL PARENTS 7',ts.getAllParents(7), '\n')
