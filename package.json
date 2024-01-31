@@ -2,28 +2,30 @@
     "name": "tree-store",
     "version": "1.0.0",
     "description": "Task for Frontend developer / Vue.js position in MStroy",
-    "main": "index.js",
+    "main": "index.ts",
     "type": "module",
     "directories": {
-      "test": "test"
+        "test": "test"
     },
     "scripts": {
-      "test": "mocha",
-      "start": "node index.js"
+        "test": "mocha",
+        "start": "npx tsx index.ts"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/cryingsealpup/treestore.git"
+        "type": "git",
+        "url": "git+https://github.com/cryingsealpup/treestore.git"
     },
     "keywords": [
-      "interview",
-      "tasks"
+        "interview",
+        "tasks"
     ],
     "author": "Ekaterina Radchenko",
     "homepage": "https://github.com/cryingsealpup/treestore#readme",
     "devDependencies": {
-      "chai": "4.3.6",
-      "mocha": "10.0.0",
-      "sinon": "14.0.0"
+        "chai": "4.3.6",
+        "mocha": "10.0.0",
+        "sinon": "14.0.0",
+        "tsx": "^4.7.0",
+        "typescript": "^5.3.3"
     }
-  }
+}
